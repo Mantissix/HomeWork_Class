@@ -19,7 +19,7 @@ class Bicycle:
 
 
 class EBicycle(Bicycle):
-    battery_level = 0
+    battery_level: int
 
     def __init__(self, battery_level):
         self.battery_level = battery_level
