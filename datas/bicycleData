@@ -1,7 +1,14 @@
-data1:
-  - 50
-  - 2000
+data1: &test
+  battery: 0
+  km: 1000
 
 data2:
-  - 100
-  - 4000
+  battery: 50
+  km: 2000
+
+data3:
+  battery: 100
+  km: 3000
+
+data4:
+  <<: *test

@@ -6,4 +6,7 @@ person = {'name': 'Lucy', 'age': 20, 'gender': 'female'}
 # yaml.safe_dump()是将python对象转换成yaml格式
 with open("./dataPractice", encoding='UTF-8') as practice:
     print(yaml.safe_load(practice))
-    print(yaml.safe_dump(person))
+    try:
+        yaml.safe_dump(data=person)
+    except Exception as e:
+        print("Error")
